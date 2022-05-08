@@ -8,4 +8,9 @@
 ##### 	* Slack is the main platform we will used to share and communicate ideas. Note: information can get lost in the history. Importan files should be uploaded to GitHub or kept in a back file in local repo. 
 #####	* Zoom is our default video communication platform. Here we can meet "face-to-face," so to say, and for updates, discussions, and walk-throughs/ help with code related issues.
 ---
- 
+## "Lung Cancer: Do you have it?"
+### Overview:
+#### The goal of our project is to identify what factors in our dataset increase the accuracy score of our ML model to predict a sample patient who has lung cancer. 
+#### Our dataset consist of behavioral factors and symptomatic conditions. Using different regression models, we hope to identify a set of specific characteristics that have the highest chance predicting if a person will have lung cancer.
+# Image
+##
