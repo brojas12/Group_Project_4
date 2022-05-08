@@ -1,7 +1,5 @@
 # Machine Leaning Model- Group 4- Segment 1
 
-
-
 # Communication Protocols:
 
 Below is a set of basic guidelines for our projects workflow and the preservation of the data's integrety.
@@ -63,6 +61,3 @@ The columns breakdown is shown below.
     Chest pain: YES=2 , NO=1
     
     Lung Cancer: YES , NO
-
-
- 
