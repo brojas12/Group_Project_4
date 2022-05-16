@@ -1,63 +1,62 @@
-# Machine Leaning Model- Group 4- Segment 1
-
 # Communication Protocols:
 
-Below is a set of basic guidelines for our projects workflow and the preservation of the data's integrety.
-Note: Our projects GitHub host is Bryan. While the 'square role' changes each week, Bryan can assist with any issues that arrise later on regarding branch management.
-
-
-1) Each member will work in their own branch. Code can be shared via GitHub branches or through slack. Only reviewed and finished products will be integrated by our 'square role' each week.
-
-2) If pushing to main, advise the group via slack to ensure no overides or deleted file occur.
-Preferred Communication Methods:
-    * Slack is the main platform we will used to share and communicate ideas. Note: information can get lost in the history. Importan files should be uploaded to GitHub or kept in a back file in local repo.
-    * Zoom is our default video communication platform. Here we can meet "face-to-face," so to say, and for updates, discussions, and walk-throughs/ help with code related issues.
-        "Lung Cancer: Do you have it?"
-        
+Below is a set of basic guidelines for our project’s workflow and the preservation of the data's integrity. Note: Our projects GitHub host is Bryan. While the 'square role' changes each week, Bryan can assist with any issues that arise later regarding branch management.
+1.	Each member will work in their own branch. Code can be shared via GitHub branches or through slack. Only reviewed and finished products will be integrated by our 'square role' each week.
+2.	If pushing to main, advise the group via slack to ensure no overrides or deleted file occur. Preferred Communication Methods:
+            
+            o	Slack is the main platform we will used to share and communicate ideas. Note: 
+            information can get lost in the history. Important files should be uploaded to GitHub or
+            kept in a back file in local repo.
+            
+            o	Zoom is our default video communication platform. Here we can meet "face-to-face," so 
+            to say, and for updates, discussions, and walk-throughs/ help with code related issues. 
+            "Breast Cancer: Do you, have it?"
 # Overview:
+        The purpose of our machine learning model is to create an effective breast cancer prediction system that allows people 
+        to identify whether their tumor is benign or malignant. We chose this topic to create awareness about the dangers of 
+        breast cancer and help identify a cancerous tumor in the early stages. Our goal is to enable individuals to identify 
+        whether their tumor is benign or malignant based on the tumor’s characteristics such as size, compactness, and concavity. 
+        The source data used in our machine learning model is data of 569 Fine-Needle Aspirate (FNA) samples from breast tumors, 
+        with records of 10 cell nuclear morphology attributes, was taken from the University of Wisconsin. The question we 
+        hope to answer using our machine learning model is, whether there were pairs of attributes could accurately diagnose 
+        breast tumor cell aspirates are benign(non-cancerous) or malignant (cancerous). The explanatory variable is the diagnosis 
+        of the tumor cell (malignant or benign), and the predictor variables are radius (µm), texture (grayscale value), 
+        perimeter (µm), area(µm2), smoothness (µm), compactness, concavity (µm), concave points, symmetry (µm), and fractal 
+        dimension (µm), all of which are the mean values. If the majority of the tumor cells are malignant, then the tumor 
+        is cancerous.
 
-    The purpose of our machine learning model is to create an effective cancer prediction system that allows people to know
-    their cancer risk status based on a number behavioral and Symptomatic risk factors. We chose this topic to create awareness
-    about the dangers of lung cancer. Our goal is to enable individuals to make the appropriate decisions based on their 
-    lung cancer risk status. The source data used in our machine learning model is a spreadsheet found on kaggle.com and 
-    includes a total 16 columns and 310 rows. We split the data into behavioral and Symptomatic risk factors. The question 
-    we hope to answer using our  machine learning model is what are the top 5 risk factors that increase the likelihood of 
-    developing lung cancer?
 
-The columns breakdown is shown below. 
+### Description of preliminary data preprocessing.
 
-### Behavioral Risk Factors:
-    
-    Smoking: YES=2 , NO=1
-    
-    Peer_pressure: YES=2 , NO=1
-    
-    Alcohol: YES=2 , NO=1
-    
-### Symptomatic Risk Factors:
+The dataset we chose for our machine learning needed only minimal changes to produce a clean dataset for us to analyze and come up with an agreeable topic. We dropped the ID column and any rows containing null values. Additionally, we changed the diagnosis column of ‘Benign’ to 1 and ‘Malignant’ to 2. Lastly, the original data set provided the mean, standard error, and the “worst” (the average of the largest three values). For the project, we agreed to only use the mean values for all the attributes. 
 
-    Gender: M(male), F(female)
+### Description of preliminary feature engineering and preliminary feature selection, including the decision-making process.
+
+Using Seaborn and Matplotlib, we were able to infer that feature to focus on using a heatmap. 
+
+The figure to the down below provides the correlation of all our features against themselves by shading does of high correlation closer to the color Purple and those with less correlation white or light red. 
+
+![](Resources/Corr_plot.PNG)
+
+The results draw our attention to the hot spots where we can eliminate features that are vs themselves, since those would clearly have a high correlation. 
+
+Here’s a list of the tables we will build using what we found from the heatmap:
+
+    •	Area mean vs Radius mean
     
-    Age: Age of the patient
+    •	Radius worst vs Perimeter mean
     
-    Yellow fingers: YES=2 , NO=1
+    •	Texture worst vs Texture mean
     
-    Anxiety: YES=2 , NO=1
-    
-    Chronic Disease: YES=2 , NO=1
-    
-    Fatigue: YES=2 , NO=1
-    
-    Allergy: YES=2 , NO=1
-    
-    Wheezing: YES=2 , NO=1
-    
-    Coughing: YES=2 , NO=1
-    
-    Shortness of Breath: YES=2 , NO=1
-    
-    Swallowing Difficulty: YES=2 , NO=1
-    
-    Chest pain: YES=2 , NO=1
-    
-    Lung Cancer: YES , NO
+    •	Radius mean vs Area worst
+
+### Description of how data was split into training and testing sets
+
+We created a linear regression model with mean measurements. We then split the data into two-thirds for training and one-third for testing to prevent the model from being over fit. We used the training data to create a linear regression model and the testing data to verify the accuracy of the regression model by assessing the predictability of the decision tree. The accuracy of the model was calculated by summing up the true positives and negatives and dividing by the number of all observations. Our model displayed an accuracy of 97%.
+
+### Explanation of model choice, including limitations and benefits
+
+SciKitLearn will be used using a linear regression model to train and test the data. Our output labels will predict whether a breast tumor cell aspirates is benign(non-cancerous) or malignant (cancerous). The benefit of using a linear regression is that while it is important to predict the clinical outcome of a patient, it is also important quantify the influence of other features into account in an interpretable way. The linear regression model forces the prediction to be a linear combination of features, which is both its greatest strength and its greatest limitation. All of which make for an interpretable model. Furthermore, linear models are easy to quantify and describe. 
+ 
+### Link to our google slides. 
+https://docs.google.com/presentation/d/1nloKANql0XLSAcbbhwOkxPS1bKMR0A9y9f3WLgYX0CE/edit?usp=sharing
