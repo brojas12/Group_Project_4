@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#Cleaning github
+Communication_Protocols.md
+technology.md
