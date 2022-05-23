@@ -46,4 +46,4 @@ We created a linear regression model with mean measurements. We then split the d
 SciKitLearn will be used using a linear regression model to train and test the data. Our output labels will predict whether a breast tumor cell aspirates is benign(non-cancerous) or malignant (cancerous). The benefit of using a linear regression is that while it is important to predict the clinical outcome of a patient, it is also important quantify the influence of other features into account in an interpretable way. The linear regression model forces the prediction to be a linear combination of features, which is both its greatest strength and its greatest limitation. All of which make for an interpretable model. Furthermore, linear models are easy to quantify and describe. 
  
 ### Link to our google slides. 
-https://docs.google.com/presentation/d/1nloKANql0XLSAcbbhwOkxPS1bKMR0A9y9f3WLgYX0CE/edit?usp=sharing
+https://docs.google.com/presentation/d/12CxBT9FPjNfo_sVnSzCsloHxcBYDPzNQhJWn_YxaqM8/edit?usp=sharing
