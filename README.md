@@ -63,5 +63,5 @@ We conclude from the logistic regression model that breast tumor cell aspirates 
 ### Link to Presentation.
 https://docs.google.com/presentation/d/12CxBT9FPjNfo_sVnSzCsloHxcBYDPzNQhJWn_YxaqM8/edit?usp=sharing
  
-
-
+### Link to Dashboard
+https://public.tableau.com/app/profile/kenny.rodriguez/viz/BreastCancer_16532846841690/Dashboard1
