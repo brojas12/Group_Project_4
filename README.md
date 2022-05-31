@@ -58,6 +58,7 @@ During our initial analysis, it occurred to us that cancer cells are often chara
 
 After running both the logistic regression and linear regression it is clear there are other features in our dataset that provide a clear definition of benign and malignant cellular distinction. Our logistic model showed a drop in performance after removing all the features about cell size, the drop was only by about 4 points in accuracy. Similarily, the linear regression model dropped about 6 points in accuracy. At this time, we can accept that our data and logistic regression model appears to be working well to identify malignant cells from benign.
 
+We conclude from the logistic regression model that breast tumor cell aspirates can be classified as malignant or benign with 97% accuracy given the cell nuclear morphology attributes of concave points, area, perimeter, and texture. In the model, the best pairs of attributes are area and compactness, concave points and texture, and concavity and radius. Although a more in depth analysis is required, the model is useful for visualizing how breast cancer cells can be distinguished as malignant or benign based on visual observations.  For future projects, we are interested in removing scaling and/or oversampling and testing the dataset’s resilience. As well as changing the ratio between test data vs training data. 
 
 ### Link to Presentation.
 https://docs.google.com/presentation/d/12CxBT9FPjNfo_sVnSzCsloHxcBYDPzNQhJWn_YxaqM8/edit?usp=sharing
