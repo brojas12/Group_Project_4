@@ -1,16 +1,17 @@
 # Overview:
-    	The purpose of our machine learning model is to create an effective breast cancer prediction system that allows people
-    	to identify whether their tumor is benign or malignant. We chose this topic to create awareness about the dangers of
-        breast cancer and help identify a cancerous tumor in the early stages. Our goal is to enable individuals to identify
-    	whether their tumor is benign or malignant based on the tumor’s characteristics such as size, compactness, and concavity.
-    	The source data used in our machine learning model is data from 569 Fine-Needle Aspirate (FNA) samples from breast tumors,
-    	with records of 10 cell nuclear morphology attributes, was taken from the University of Wisconsin. The question we
-        hope to answer using our machine learning model is, whether there were pairs of attributes that could accurately diagnose
-    	breast tumor cell aspirates are benign(non-cancerous) or malignant (cancerous). The explanatory variable is the diagnosis
-        of the tumor cell (malignant or benign), and the predictor variables are radius (µm), texture (grayscale value),
-    	perimeter (µm), area(µm2), smoothness (µm), compactness, concavity (µm), concave points, symmetry (µm), and fractal
-    	dimension (µm), all of which are the mean values. If the majority of the tumor cells are malignant, then the tumor
-    	is cancerous.
+
+The purpose of our machine learning model is to create an effective breast cancer prediction system that allows people
+to identify whether their tumor is benign or malignant. We chose this topic to create awareness about the dangers of
+breast cancer and help identify a cancerous tumor in the early stages. Our goal is to enable individuals to identify
+whether their tumor is benign or malignant based on the tumor’s characteristics such as size, compactness, and concavity.
+The source data used in our machine learning model is data from 569 Fine-Needle Aspirate (FNA) samples from breast tumors,
+with records of 10 cell nuclear morphology attributes, was taken from the University of Wisconsin. The question we
+hope to answer using our machine learning model is, whether there were pairs of attributes that could accurately diagnose
+breast tumor cell aspirates are benign(non-cancerous) or malignant (cancerous). The explanatory variable is the diagnosis
+of the tumor cell (malignant or benign), and the predictor variables are radius (µm), texture (grayscale value),
+perimeter (µm), area(µm2), smoothness (µm), compactness, concavity (µm), concave points, symmetry (µm), and fractal
+dimension (µm), all of which are the mean values. If the majority of the tumor cells are malignant, then the tumor
+is cancerous.
  
  
 ### Description of preliminary data preprocessing.
