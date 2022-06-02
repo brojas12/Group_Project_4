@@ -24,7 +24,7 @@ Using Seaborn and Matplotlib, we were able to infer that feature to focus on usi
  
 The figure down below provides the correlation of all our features against themselves by shading does of high correlation closer to the color Purple and those with less correlation white or light red.
  
-![](Resources/Corr_plot.PNG)
+![](Resources/images/Corr_plot.PNG)
  
 The results draw our attention to the hot spots where we can eliminate features that are vs themselves since those would clearly have a high correlation.
  
